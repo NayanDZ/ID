@@ -50,7 +50,7 @@ The native methods for PHP serialization are `serialize()` and `unserialize()`.
 
 If you have source code access, you should start by looking for `unserialize()` anywhere in the code and investigating further attack.
 
-#### ~ Java serialization format
+#### ~ Java serialization format | [Java Deserialization RCE](https://blog.securelayer7.net/thick-client-penetration-testing-3javadeserialization-exploit-rce/)
 Java use binary serialization formats which is more difficult to read but you can still identify serialized data if you know how to recognize a few tell-tale signs.
 
 Example: serialized Java objects always begin with the same bytes, which are encoded as `ac ed` in **hexadecimal** and `rO0` in **Base64**
